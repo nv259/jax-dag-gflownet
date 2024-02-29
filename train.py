@@ -142,7 +142,7 @@ if __name__ == '__main__':
         help='Value of delta for Huber loss (default: %(default)s)')
     optimization.add_argument('--batch_size', type=int, default=32,
         help='Batch size (default: %(default)s)')
-    optimization.add_argument('--num_iterations', type=int, default=100_000,
+    optimization.add_argument('--num_iterations', type=int, default=10_000,
         help='Number of iterations (default: %(default)s)')
 
     # Replay buffer
