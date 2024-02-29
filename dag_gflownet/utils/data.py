@@ -44,7 +44,8 @@ def get_data(name, args, rng=default_rng()):
         score = 'bge'
 
     elif name == 'sachs_continuous':
-        graph = get_example_model('sachs')
+        graph = get_example_model(model='sachs')
+        print('\nDownload file\n')
         filename = download(
             'https://www.bnlearn.com/book-crc/code/sachs.data.txt.gz',
             Path('data/sachs.data.txt')
@@ -54,7 +55,7 @@ def get_data(name, args, rng=default_rng()):
         score = 'bge'
 
     elif name =='sachs_interventional':
-        graph = get_example_model('sachs')
+        graph = get_example_model(model='sachs')
         filename = download(
             'https://www.bnlearn.com/book-crc/code/sachs.interventional.txt.gz',
             Path('data/sachs.interventional.txt')
